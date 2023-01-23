@@ -1,3 +1,4 @@
+
 console.log("Hello Batch 245!");
 
 // What is conditional statements?
@@ -210,3 +211,70 @@ else{
 	let ternaryResult = (1>18) ? 1  : 2;
 	
 	console.log(ternaryResult);
+
+
+//[Section] Switch Statement
+	/*
+		The switch statement evaluates an expression and matches the expression's value to a case class.
+	*/
+	// toLowerCase() method will convert all the letters into small letters.
+	let day = prompt("What day of the week today?").toLowerCase();
+
+	switch (day){
+		case 'monday':
+			console.log('The color of the day is red!');
+			//it means the code will stop here
+			break;
+		case 'tuesday':
+			console.log('The color of the day is orange!');
+			break;
+
+		case 'wednesday':
+			console.log('The color of the day is yellow!');
+			break;
+		case 'thursday':
+			console.log('The color of the day is green!');
+			break;
+		case 'friday':
+			console.log('The color of the day is blue!');
+			break;
+		case 'saturday':
+			console.log('The color of the day is inigo!');
+			break;
+		case 'sunday':
+			console.log('The color of the day is violet!');
+			break;
+
+		default:
+			console.log("Please input a valid day!")
+			break;
+
+	}
+
+//[section] Try-catch-finally
+		//try-catch statement for error handling
+		// There are instances when the application returns an error/warning that is not necessarily an error in the context of our code.
+		//these errors are result of an attempt of the programming langiage to help developers in creating effecient code.
+
+	function showIntesity(windSpeed){
+		try{
+			//codes that will be executed or run
+			alerat(determineTyphoonIntesity(windSpeed));
+			alert("Intensity updates will show alert from try.");
+		}
+		catch(error){
+			console.warn(error.message);
+		}
+		finally{
+			// Continue execution of code regardless of success and failure of code execution in the try statement
+			alert("Intensity updates will show new alert from finally.")
+		}
+	}
+
+	showIntesity(119);
+
+
+
+		
+
+
